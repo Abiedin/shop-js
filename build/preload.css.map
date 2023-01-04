@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,QAAQ,EAAE,KAAK;EACb,GAAG,EAAE,GAAG;EACR,IAAI,EAAE,GAAG;;AAGb,aAAc;EACZ,KAAK,EAAE,GAAG",
+"sources": ["../scss/preload.scss"],
+"names": [],
+"file": "preload.css"
+}

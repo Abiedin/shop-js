@@ -1,0 +1,167 @@
+@import "header.scss";
+@import "bag.scss";
+:root {
+  --colorText: white;
+  --BG: rgb(242, 247, 247);
+  --fontFamily: Lucida Console, fantasy;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+%tpl {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.box {
+  background-image: url("/img/bg1.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  background-size: cover;
+  background-position: 100% 100%;
+  padding-top: 25px;
+  min-width: 100%;
+  color: var(--colorText);
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  @extend %tpl;
+}
+
+.slogan__box {
+  display: flex;
+}
+
+.slogan__fly,
+.slogan__getup,
+.slogan__live {
+  margin: 0 15px 0 0;
+  font-size: 40px;
+  font-family: Monotype Corsiva, fantasy;
+  font-weight: 600;
+  width: auto;
+}
+
+.slogan__wedo {
+  font-size: var(--fontSize);
+  margin: 20px 0;
+  width: auto;
+  font-family: var(--fontFamily);
+}
+
+.slogan__button {
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  width: 100px;
+  color: var(--colorText);
+  border-radius: var(--borderRadiusButton);
+  height: var(--heightButton);
+  cursor: pointer;
+  box-shadow: 3px 4px 4px rgba(255, 255, 255, 0.25),
+    3px 4px 4px rgba(255, 253, 253, 0.22);
+}
+
+.slogan__button:hover {
+  border: none;
+  background-color: var(--hoverColor);
+  color: black;
+  transition-duration: 0.4s;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+
+  @extend %tpl;
+}
+
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a01818;
+  font-family: var(--fontFamily);
+  text-decoration: none;
+  width: 150px;
+  color: var(--colorText);
+  border-radius: var(--borderRadiusButton);
+  height: var(--heightButton);
+  cursor: pointer;
+  box-shadow: 3px 4px 4px rgba(145, 142, 142, 0.25),
+    3px 4px 4px rgba(145, 142, 142, 0.25);
+}
+
+.main__button:hover {
+  background-color: var(--hoverColor);
+  color: black;
+  transition-duration: 0.4s;
+}
+
+.main__featured {
+  font-size: var(--fontSize);
+  font-weight: 600;
+  margin: 20px 0;
+  font-family: var(--fontFamily);
+}
+
+.main__featured span {
+  color: rgb(255, 200, 20);
+  font-size: var(--fontSize);
+  margin: 0 20px;
+}
+
+.main__button {
+  margin: 20px 0;
+}
+
+.psevdopfeatured {
+  display: flex;
+}
+
+.product__home {
+  margin: 0 20px;
+}
+
+.product__img-home {
+  width: 150px;
+  border-radius: 4px;
+}
+
+.product__desk-home {
+  font-family: var(--fontFamily);
+  font-size: 13px;
+  opacity: 0.9;
+  margin: 9px 0 0 0;
+}
+
+.product__price-home {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin: 9px 0 0 0;
+  font-size: 12px;
+  opacity: 0.8;
+  font-family: var(--fontFamily);
+}
+
+.product__currency-home {
+  margin: 0 3px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store</title>
+  <link rel="stylesheet" href="build/products.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box__wrapper">
+      <header class="header">
+        <nav class="nav">
+          <a href="home.html" class="nav__home">Home</a>
+          <a href="products.html" class="nav__products">Products</a>
+          <a href="about.html" class="nav__about">About</a>
+        </nav>
+        <div class="logo-spotty">spotty</div>
+        <div class="shopping-cart" id="basket"><img src="img/basket_black.jpg" alt="basket"  class="shopping-cart-img"><div class="header__bag-count">0</div></div> 
+      </header>     
+    </div>
+    <main class="main">
+      <div class="main__link">
+        <div class="main__link__home"><a href="home.html" class="main__link__a">HOME/PRODUCTS</a></div>
+      </div>
+      <div class="main__about">
+        <div class="main__filter">
+          <input type="text" class="main__input" id="main__input" placeholder="Search...">
+          <div class="company">Company</div>
+          <ul class="main_ul" id="main_ul">
+            <li class="li__company" value="All"><div class="li__text" id="all">All</div><div class="li__count__all">0</div></li>
+            <li class="li__company" value="Ikea"><div class="li__text" id="Ikea">Ikea</div><div class="li__count__ikea">0</div></li>
+            <li class="li__company" value="Marcos"><div class="li__text" id="Marcos">Marcos</div><div class="li__count__macros">0</div></li>
+            <li class="li__company" value="Caressa"><div class="li__text" id="Caressa">Caressa</div><div class="li__count__caressa">0</div></li>
+            <li class="li__company" value="Liddy"><div class="li__text" id="Liddy">Liddy</div><div class="li__count__liddy">0</div></li>
+            <li class="li__company" value="Mono"><div class="li__text" id="Mono">Mono</div><div class="li__count__mono">0</div></li>
+           
+          </ul>
+          <div class="income_top">
+            <div>
+              <label for="ren" class="label">Price</label> 
+            </div>
+            <div class="range_nam_letter">
+              <input type="range" class="" id="ren" oninput="fun()" onchange ="selectRange(value)" min="1" max="10000" step="1" value="10000">
+                <div class="range_namber">
+                  <div class="range__text">Value :</div>
+                  <div id="one" class="range_value">10000</div>
+                  <div class="letter">$</div>
+                </div>						
+            </div>							
+          </div>
+        </div>
+        <div class="main__products"></div>
+      </div>
+    </main>
+
+    <div class="bag">  
+      <div class="bag__opacity"></div>     
+        <div class="bag__basket">
+          <img src="img/close.jpg" alt="close" class="bag_close-img">
+          <div class="bag__your">Your Bag</div>
+          <div class="bag__product" id="bag__product"></div>    
+          <div class="bag__price">
+            <div class="bag__totall__text">Totall :</div>
+            <div class="bag__totall__price">0</div>
+            <div class="bag__currency">$</div>
+          </div>
+          <button class="bag__button" id="bag__button">CHECKOUT</button>
+        </div>      
+    </div>   
+  </div>
+  <script src="js/basket.js"></script>
+  <script src="js/fun.js"></script>
+  <script src="js/products.js"></script> 
+</body>
+</html>

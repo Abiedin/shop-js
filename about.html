@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="build/about.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box__wrapper">
+        <header class="header">
+          <nav class="nav">
+            <a href="home.html" class="nav__home">Home</a>
+            <a href="products.html" class="nav__products">Products</a>
+            <a href="about.html" class="nav__about">About</a>
+          </nav>
+          <div class="logo-spotty">spotty</div>
+          <div class="shopping-cart" id="basket">
+            <img
+              src="img/basket_black.jpg"
+              alt="basket"
+              class="shopping-cart-img"
+            />
+            <div class="header__bag-count">0</div>
+          </div>
+        </header>
+      </div>
+      <main class="main">
+        <div class="main__link">
+          <div class="main__link__home">
+            <a href="home.html" class="main__link__a">HOME/ABOUT</a>
+          </div>
+        </div>
+        <div class="main__about">
+          <div class="main__history"><span>/</span>Our History</div>
+          <div class="main__history__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            temporibus, atque quia nam nobis commodi, iste dolorem laborum
+            adipisci magni aliquid debitis, libero incidunt harum tempore
+            numquam quam suscipit eius. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Nobis, illum nisi. Quasi minima, consectetur
+            assumenda, eos ut quaerat rerum enim corporis sapiente harum impedit
+            exercitationem maxime officia odio, laudantium expedita!
+          </div>
+        </div>
+      </main>
+      <div class="bag">
+        <div class="bag__opacity"></div>
+        <div class="bag__basket">
+          <img src="img/close.jpg" alt="close" class="bag_close-img" />
+          <div class="bag__your">Your Bag</div>
+          <div class="bag__product" id="bag__product"></div>
+          <div class="bag__price">
+            <div class="bag__totall__text">Totall :</div>
+            <div class="bag__totall__price">0</div>
+            <div class="bag__currency">$</div>
+          </div>
+          <button class="bag__button" id="bag__button">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/basket.js"></script>
+    <script type="module" src="js/about.js"></script>
+  </body>
+</html>

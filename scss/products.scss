@@ -1,0 +1,269 @@
+@import "header.scss";
+@import "preload.scss";
+@import "bag.scss";
+
+:root {  
+  --colorText: rgb(0, 0, 0);
+  --fontFamilyFilter: Verdana, Arial, Helvetica, sans-serif;
+  --BG:  rgb(242, 247, 247);
+}
+
+%tplCopm{
+  font-family: "Gill Sans", sans-serif;
+  color: black;
+  font-size: 16px;
+  margin: 25px 0 0 0;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.box__wrapper {
+  height: 7vh;
+  padding-top: 30px;
+  color: black;
+ 
+}
+
+.main__link{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  background: var(--BG);
+ 
+}
+
+.main__link__home{
+  font-family: var(--fontFamilyMain);
+  font-size: 19px;
+  @extend %tpl;
+  color: rgb(111, 138, 108);
+}
+
+.main__link__a{
+  text-decoration: none;
+}
+
+.main__link__a:hover{
+  color: rgb(174, 204, 238); 
+  transition-duration: 0.4s;
+}
+
+.main__about{
+  display: flex;
+  flex: content;
+ 
+  @extend %tpl;
+  padding: 25px 0;
+  font-family: var(--fontFamilyFilter);
+ 
+}
+
+.main__filter{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+ 
+}
+
+.main__input{
+  border: none;
+  height: 25px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  width: 200px;
+  background: var(--BG);
+  box-shadow: 3px 4px 4px rgba(145, 142, 142, 0.25), 3px 4px 4px rgba(145, 142, 142, 0.25);
+}
+
+.main__products{
+  width: 75%;
+ 
+}
+
+.company{
+  @extend %tplCopm;
+}
+
+.main_ul{
+  margin: 0;
+  padding: 0;
+}
+
+.li__company{
+  display: flex;
+  flex: content;
+  font-family: "Gill Sans", sans-serif;
+  list-style: none;
+  font-size: 16px;
+  color: rgb(44, 172, 189);
+  margin: 15px 7px;
+  width: fit-content; 
+}
+
+
+.li__text{
+  margin-top: 6px;
+}
+
+.li__text:hover{
+  color: #054750;
+  transition-duration: 0.4s;
+}
+
+.li__count__all,
+.li__count__ikea,
+.li__count__macros,
+.li__count__caressa,
+.li__count__liddy,
+.li__count__mono{
+  @extend %tplForCount; // in "bag.scss";
+}
+
+.income_top{
+  font-family: "Gill Sans", sans-serif;
+  margin: 25px 0 0 0;
+}
+
+.label{
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.range_nam_letter{
+  margin: 10px 0;
+}
+
+.range_namber{
+  display: flex;
+  flex: content;
+  margin: 15px 0;
+  color: rgb(44, 172, 189);
+}
+
+.range__text{
+  margin: 0 10px 0 0;
+}
+
+.letter{
+  margin: 0 0 0 3px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+.psevdoproducts{
+  display: grid;
+  grid-template-columns: 34% 34% 34%;
+}
+
+.product{
+  width: 230px;
+  height: 300px;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 0 0 0 0;
+  padding-bottom: 20px;
+ 
+}
+
+.product__img{
+  border-radius: 10px;
+  width: 230px;
+}
+
+.product__add{
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product__minus{
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.product__desk{
+  display: flex;
+  flex-direction:column
+}
+
+.product__price{
+  display: flex;
+  flex: content;
+  margin: 10px 0;
+}
+
+.product__price-text{
+  height: 20px;
+  color: #054750;
+  font-size: 14px; 
+ 
+}
+
+.product__currency{
+  height: 20px;
+  color: #054750;
+  font-size: 14px;
+  margin: 0 3px;
+ 
+}
+
+.product__name{
+  color: #054750;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 10px 0;
+ 
+}
+
+.product__company{
+  color: #054750;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.product__count{
+  display: flex;
+  justify-content: center;
+  height: 20px;
+  margin: 0 0 0 20px;
+ 
+}
+
+.product__count-input{
+  width: 30px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.product__count-hidden{
+  display: none;
+}
+
+.product__push-bag{
+  background: rgb(17, 173, 201);
+  border: none;
+  font-size: 17px;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+ 
+}
+
+.product__push-bag:hover{
+  color:  rgb(25, 64, 71);
+  background: rgb(183, 226, 247);
+  transition-duration: 0.4s;
+}

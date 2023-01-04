@@ -1,0 +1,50 @@
+:root {
+  --marginBox: 0 auto;
+  --hoverColor: rgb(236, 236, 236);
+  --heightButton: 35px;
+  --borderRadiusButton: 5px;
+  --fontSize: 16px;
+  --fontFamilyMain: Lucida Console, fantasy; }
+
+.header {
+  margin: 0 auto;
+  width: 75%; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+nav {
+  font-family: var(--fontFamilyMain);
+  font-size: var(--fontSize); }
+
+.nav__home,
+.nav__products,
+.nav__about {
+  text-decoration: none;
+  color: var(--colorText);
+  margin: 0 15px 0 0;
+  height: 25px; }
+
+.nav__home:hover,
+.nav__products:hover,
+.nav__about:hover {
+  color: var(--hoverColor);
+  transition-duration: 0.4s; }
+
+.logo-spotty {
+  /*position: fixed;
+  top: 1%;
+  left: 46%;*/
+  margin: -20px 0 0 -200px;
+  font-size: 40px;
+  font-family: Monotype Corsiva, fantasy; }
+
+@media screen and (max-width: 800px) {
+  .logo-spotty {
+    margin: -20px 0 0 -100px; } }
+@media screen and (max-width: 650px) {
+  .logo-spotty {
+    margin: -20px 10px 0 10px; } }
+
+/*# sourceMappingURL=header.css.map */

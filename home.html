@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="build/home.css" />
+    <link rel="stylesheet" href="build/bag.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box">
+        <header class="header">
+          <nav class="nav">
+            <a href="home.html" class="nav__home">Home</a>
+            <a href="products.html" class="nav__products">Products</a>
+            <a href="about.html" class="nav__about">About</a>
+          </nav>
+          <div class="logo-spotty">spotty</div>
+          <div class="shopping-cart" id="basket">
+            <img
+              src="img/basket_black.jpg"
+              alt="basket"
+              class="shopping-cart-img"
+            />
+            <div class="header__bag-count">0</div>
+          </div>
+        </header>
+        <div class="slogan">
+          <div class="slogan__box">
+            <div class="slogan__fly">Fly,</div>
+            <div class="slogan__getup">Get Up,</div>
+            <div class="slogan__live">Live</div>
+          </div>
+          <div class="slogan__wedo">Don't stop - make a choice</div>
+          <button
+            class="slogan__button"
+            onclick="window.location.href = 'products.html'"
+          >
+            SHOW NOW
+          </button>
+        </div>
+      </div>
+      <main class="main">
+        <div class="main__featured"><span>/</span>Featured</div>
+        <div class="main__featured-products"></div>
+        <a class="main__button" href="products.html">ALL PRODUCTS</a>
+      </main>
+      <div class="bag">
+        <div class="bag__opacity"></div>
+        <div class="bag__basket">
+          <img src="img/close.jpg" alt="close" class="bag_close-img" />
+          <div class="bag__your">Your Bag</div>
+          <div class="bag__product" id="bag__product"></div>
+          <div class="bag__price">
+            <div class="bag__totall__text">Totall :</div>
+            <div class="bag__totall__price">0</div>
+            <div class="bag__currency">$</div>
+          </div>
+          <button class="bag__button" id="bag__button">CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/home.js"></script>
+    <script src="js/basket.js"></script>
+  </body>
+</html>
